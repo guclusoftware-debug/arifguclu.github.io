@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>arifguclu</title>
+  <style>
+    body {
+      margin: 0;
+      scroll-behavior: smooth;
+    }
+
+    .arkaplan {
+      background-image: url(pexels-maoriginalphotography-1485894.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 60px;
+      color: white;
+    }
+
+    .meslek {
+      margin-left: -35px;
+      margin-top: 115px;
+      font-size: 30px;
+      color: white;
+    }
+
+    .menu {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #eee;
+      height: 40px;
+      padding-top: 20px;
+      display: flex;
+      justify-content: center;
+      z-index: 10;
+    }
+
+    .benimblog {
+      font-size: 20px;
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .tanıtım {
+      font-size: 30px;
+      width: 500px;
+      margin-left: 700px;
+      font-family: Arial; 
+      color: white;
+    }
+
+    .aboutme {
+      color:white;
+margin-left: 700px;
+      
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="menu">
+    <a href="#about" class="benimblog">About</a>
+  </div>
+
+  <div class="arkaplan">
+    <div class="box">ARİF ♣ GÜÇLÜ</div>
+    <div class="meslek">Software & Developer</div>
+  </div>
+
+  <div id="about" style="height:70vh; background:rgb(0, 0, 0); padding:50px;">
+    <h1 class="aboutme">About Me</h1>
+  
+  <p class="tanıtım">Hello! My name is Arif Güçlü, and I am 19 years old.I am currently studying Software Engineering at Karadeniz Technical University.</p>
+
+  <p class="tanıtım">
+    I enjoy learning how technology works and building useful digital products.
+    I am interested in web development, and I enjoy working with HTML, CSS, and basic JavaScript.
+  </p>
+
+  <p class="tanıtım">Thank you for visiting my page!</p>
+</div>
+
+<script>
+  document.querySelector('a[href="#about"]').addEventListener('click', function(e){
+    e.preventDefault();
+    document.querySelector('#about').scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+</script>
+
+</body>
+</html>
